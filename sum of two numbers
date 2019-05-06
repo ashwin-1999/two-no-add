@@ -1,0 +1,27 @@
+#include<stdio.h>
+#include<conio.h>
+void getinput(int *x,int *y)
+{
+  printf("Enter two numbers\n");
+  scanf("%d%d",&*x,&*y);
+}
+void add(int x,int y)
+{
+  int z;
+  z=x+y;
+  return z;
+}
+void outpt(int x,int y)
+{
+  int c;
+  c=add(x,y);
+  printf("\nThe sum is %d",c);
+}
+main()
+{
+  int a,b;
+  getinput(&a,&b);
+  add(a,b);
+  output(a,b);
+  getch();
+}
